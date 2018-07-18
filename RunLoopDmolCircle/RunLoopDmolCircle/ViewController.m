@@ -36,7 +36,7 @@
     
     [self fireTimer];
     
-//    [self addObserver];
+    [self addObserver];
 }
 
 
@@ -51,7 +51,7 @@
 
 - (void)fireTimer {
     
-    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     
 }
 
